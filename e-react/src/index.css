@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Add this to your Tailwind CSS file or global styles */
+.scrollbar-thin::-webkit-scrollbar {
+    display: hidden;
+    width: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    display: hidden;
+    background-color: black;
+    border-radius: 8px;
+}
+
+
+
+
+@layer components{
+    .icon__wrapper{
+        @apply border border-gray-300 rounded-full w-[50px] h-[50px] grid place-items-center text-[22px]; 
+
+    }
+    .feature_btn{
+        @apply bg-yellow-400 text-white px-4 py-1 rounded-full;
+    }
+}
